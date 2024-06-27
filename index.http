@@ -1,0 +1,38 @@
+POST http://localhost:8000/api/cursos/programacion HTTP/1.1
+Content-Type: application/json
+
+{
+    "id":4,
+    "titulo":"aprende node js fcc",
+    "lenguaje":"javascript",
+    "vistas":2000,
+    "nivel":"basico"
+}
+
+###
+
+PUT http://localhost:8000/api/cursos/programacion/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id":2,
+    "titulo":"python intermedio con proyectos",
+    "lenguaje":"python",
+    "vistas":566666666,
+    "nivel":"intermedio" 
+}
+
+###
+
+PATCH  http://localhost:8000/api/cursos/programacion/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "titulo":"prueba patchs",
+    "vistas":20000000000000000000000000000000000000
+}
+
+###
+
+DELETE   http://localhost:8000/api/cursos/programacion/1 HTTP/1.1
+
